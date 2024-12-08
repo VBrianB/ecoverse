@@ -36,6 +36,7 @@ const MainContent = () => {
                     <Image src={Trash} className={style.trash} alt='image'/>
                 </div>
             </div>
+           
         </div>
     )
 }

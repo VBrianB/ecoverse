@@ -1,6 +1,19 @@
 .page {
     background-color: var(--primary-color);
     min-height: 100vh;
-    margin: 0 30px;
 }
- 
+/* Footer */
+.footer {
+    background-color: var(--component-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footerText {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}

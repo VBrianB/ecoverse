@@ -1,0 +1,301 @@
+.productSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    background-color: var(--component-color);
+    border-radius: 200px 200px 0 0;
+}
+
+.productContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 90px;
+    color: var(--primary-color);
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    width: 75%;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.products {
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.product {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 300px; 
+}
+
+.productImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product:hover img {
+    filter: blur(5px);
+}
+
+.productInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product:hover .productInfo {
+    opacity: 1;
+}
+
+.productTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.productDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+    width: 65%;
+}
+
+.product:nth-child(2) .productImage img {
+    filter: brightness(0.8);
+}
+
+.product:nth-child(2):hover .productImage img {
+    filter: brightness(1);
+}
+
+/* Seção de Benefícios */
+.benefitsSection {
+    padding: 50px 20px;
+    background-color: var(--component-color);
+    width: 100%;
+    text-align: center;
+}
+
+.benefitsTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    margin-top: 150px;
+}
+
+.benefits {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+
+.benefit {
+    width: 100%;
+    padding: 30px;
+    width: 30%;
+    border-right: 1px solid rgba(255, 255, 255, 0.295);
+}
+
+.benefit:last-child{
+    border-right: none;
+}
+
+.benefitTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.benefitPercentage {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.benefitDescription {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+
+/* Seção de Países */
+.countriesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: var(--component-color);
+    width: 100%;
+    border-radius: 200px 200px 0 0;
+    margin-top: 130px;
+}
+
+.countriesTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.countriesDescription {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.589);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 75%;
+}
+
+.countriesContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.countriesMap {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.countriesInfo {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.country {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.295);
+    padding-bottom: 20px;
+    margin-right: 60px;
+}
+
+.countryTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding-bottom: 20px;
+}
+
+.countryDetails {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.589);
+    line-height: 1.6;
+}
+
+.countryStats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.countryStat {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+
+/* Seção de Contato */
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: var(--component-color);
+    width: 100%;
+    border-radius: 200px 200px 0 0;
+}
+
+.contactTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.contactDescription {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.589);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 50%;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.contactInput,
+.contactTextArea {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 80%;
+    background-color: #fff;
+    color: #555;
+}
+
+.contactButton {
+    width: 80%;
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+    background-color: var(--secondary-color);
+}
+
